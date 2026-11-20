@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Sixtyfour+Convergence&display=swap');
+
+.container {
+  width: 100%;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 2px dashed rgba(0, 247, 255, 0.4);
+}
+
+.header h1 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #00f7ff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 8px rgba(0, 247, 255, 0.5);
+  overflow-wrap: break-word;
+}
+
+.statusText,
+.emptyText {
+  color: #aaa;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.errorMessage {
+  background: rgba(255, 77, 77, 0.1);
+  border: 1px solid #ff4d4d;
+  color: #ff4d4d;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+}
+
+.listSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.listHeader {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.sectionTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ff2fd1;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.badge {
+  background: #ff2fd1;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 900;
+  min-width: 22px;
+  height: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 6px;
+  border-radius: 999px;
+  box-sizing: border-box;
+  box-shadow: 0 0 8px #ff2fd1;
+}
+
+/* Grilla de cupones estilo ticket arcade */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 0.8rem;
+}
+
+.card {
+  background: rgba(15, 15, 25, 0.9);
+  border: 2px solid #00f7ff;
+  border-radius: 12px;
+  padding: 0.8rem;
+  text-align: center;
+  box-sizing: border-box;
+  min-width: 0;
+  box-shadow: 0 0 10px rgba(0, 247, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  border-color: #ff2fd1;
+  box-shadow: 0 0 15px rgba(255, 47, 209, 0.4);
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.code {
+  font-family: 'Sixtyfour Convergence', sans-serif;
+  font-size: 0.8rem;
+  color: #00f7ff;
+  text-shadow: 0 0 6px rgba(0, 247, 255, 0.6);
+  overflow-wrap: anywhere;
+}
+
+.discount {
+  font-size: 1.1rem;
+  font-weight: 900;
+  color: #00ff84;
+  text-shadow: 0 0 8px rgba(0, 255, 132, 0.5);
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin-top: 1.25rem;
+    padding-top: 1.25rem;
+  }
+
+  .header h1 {
+    font-size: 1.05rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 0.7rem;
+  }
+
+  .code {
+    font-size: 0.72rem;
+  }
+
+  .discount {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    margin-top: 1rem;
+    padding-top: 1rem;
+  }
+
+  .header h1 {
+    font-size: 0.95rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .sectionTitle {
+    font-size: 0.9rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.6rem;
+  }
+
+  .card {
+    padding: 0.65rem;
+    border-radius: 10px;
+  }
+
+  .code {
+    font-size: 0.65rem;
+  }
+
+  .discount {
+    font-size: 0.95rem;
+  }
+}

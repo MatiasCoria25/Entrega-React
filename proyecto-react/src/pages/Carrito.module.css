@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Sixtyfour+Convergence&display=swap');
+
+
+.container {
+  max-width: 950px;
+  margin: 120px auto 50px auto;
+  padding: 2.5rem;
+  background: rgba(10, 10, 18, 0.95);
+  border: 2px solid #00f7ff;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(0, 247, 255, 0.3), inset 0 0 15px rgba(0, 247, 255, 0.05);
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+}
+
+.title {
+  font-family: 'Sixtyfour Convergence', sans-serif;
+  font-size: 1.8rem;
+  color: #00f7ff;
+  text-align: center;
+  margin-bottom: 2rem;
+  text-shadow: 0 0 12px rgba(0, 247, 255, 0.7);
+}
+
+.itemsList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.itemCard {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: rgba(18, 18, 30, 0.9);
+  border: 1px solid rgba(255, 47, 209, 0.5);
+  border-radius: 14px;
+  padding: 1rem 1.2rem;
+  box-shadow: 0 0 10px rgba(255, 47, 209, 0.2);
+  transition: all 0.3s ease;
+}
+
+.itemCard:hover {
+  border-color: #00f7ff;
+  box-shadow: 0 0 18px rgba(0, 247, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+.imageWrapper {
+  width: 70px;
+  height: 70px;
+  min-width: 70px;
+  background: #000;
+  border-radius: 10px;
+  border: 1px solid #00f7ff;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.itemImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.itemInfo {
+  flex-grow: 1;
+}
+
+.itemName {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 0.4rem 0;
+}
+
+.itemPrice, .itemSubtotal {
+  margin: 0.2rem 0;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.itemPrice span, .itemSubtotal span {
+  color: #00ff84;
+  font-weight: 700;
+}
+
+
+.quantityControls {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 0.4rem 0.8rem;
+  border-radius: 10px;
+  border: 1px solid #00f7ff;
+}
+
+.qtyBtn {
+  background: rgba(0, 247, 255, 0.15);
+  color: #00f7ff;
+  border: 1px solid #00f7ff;
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  font-weight: 900;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+.qtyBtn:hover {
+  background: #00f7ff;
+  color: #000;
+  box-shadow: 0 0 8px #00f7ff;
+}
+
+.qtyNumber {
+  font-weight: 800;
+  font-size: 1rem;
+  min-width: 20px;
+  text-align: center;
+}
+
+.deleteBtn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #ff2fd1;
+  padding: 0.5rem;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+}
+
+.deleteBtn:hover {
+  color: #ff4d4d;
+  filter: drop-shadow(0 0 8px #ff4d4d);
+  transform: scale(1.15);
+}
+
+
+.footer {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 2px solid #00f7ff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.totalText {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.totalAmount {
+  color: #00ff84;
+  font-size: 1.6rem;
+  font-weight: 900;
+  text-shadow: 0 0 10px rgba(0, 255, 132, 0.5);
+  margin-left: 0.5rem;
+}
+
+.actionButtons {
+  display: flex;
+  gap: 1rem;
+}
+
+.clearBtn {
+  background: transparent;
+  border: 2px solid #ff2fd1;
+  color: #ff2fd1;
+  padding: 0.8rem 1.4rem;
+  border-radius: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.clearBtn:hover {
+  background: rgba(255, 47, 209, 0.2);
+  box-shadow: 0 0 12px #ff2fd1;
+}
+
+.checkoutBtn {
+  background: linear-gradient(135deg, #00f7ff, #0088ff);
+  border: none;
+  color: #000;
+  padding: 0.8rem 1.8rem;
+  border-radius: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(0, 247, 255, 0.5);
+  transition: all 0.3s ease;
+}
+
+.checkoutBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 25px rgba(0, 247, 255, 0.8);
+}
+
+
+.emptyContainer {
+  min-height: 50vh;
+  margin-top: 120px;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+}
+
+.emptyTitle {
+  font-family: 'Sixtyfour Convergence', sans-serif;
+  font-size: 1.8rem;
+  color: #00f7ff;
+  text-shadow: 0 0 10px rgba(0, 247, 255, 0.5);
+}
+
+.emptyText {
+  color: #aaa;
+  font-size: 1.1rem;
+}
+
+.exploreButton {
+  margin-top: 1rem;
+  background: linear-gradient(135deg, #ff2fd1, #8b00ff);
+  color: #fff;
+  padding: 0.8rem 1.8rem;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 800;
+  text-transform: uppercase;
+  box-shadow: 0 0 15px rgba(255, 47, 209, 0.5);
+  transition: all 0.3s ease;
+}
+
+.exploreButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 25px rgba(255, 47, 209, 0.8);
+}
+
+/* =========================================
+   MEDIA QUERIES (RESPONSIVO)
+   ========================================= */
+
+/* Tablets y pantallas medianas (hasta 768px) */
+@media (max-width: 768px) {
+  .container {
+    margin: 105px 1rem 40px 1rem;
+    padding: 1.8rem;
+    border-radius: 16px;
+  }
+
+  .title, .emptyTitle {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .itemCard {
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .itemInfo {
+    min-width: calc(100% - 90px);
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+
+  .actionButtons {
+    justify-content: center;
+  }
+}
+
+/* Celulares (hasta 480px) */
+@media (max-width: 480px) {
+  .container {
+    margin: 90px 0.75rem 30px 0.75rem;
+    padding: 1.2rem;
+    border-width: 1.5px;
+  }
+
+  .title, .emptyTitle {
+    font-size: 1.1rem;
+    line-height: 1.4;
+  }
+
+  .itemCard {
+    justify-content: space-between;
+    padding: 0.9rem;
+  }
+
+  .imageWrapper {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+  }
+
+  .itemInfo {
+    min-width: calc(100% - 76px);
+  }
+
+  .itemName {
+    font-size: 0.95rem;
+  }
+
+  .totalText {
+    font-size: 1.1rem;
+  }
+
+  .totalAmount {
+    display: block;
+    margin-left: 0;
+    margin-top: 0.3rem;
+    font-size: 1.4rem;
+  }
+
+  .actionButtons {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.75rem;
+  }
+
+  .clearBtn, .checkoutBtn, .exploreButton {
+    width: 100%;
+    text-align: center;
+    padding: 0.8rem 1rem;
+  }
+}

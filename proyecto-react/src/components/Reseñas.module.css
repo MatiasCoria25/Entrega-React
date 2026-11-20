@@ -1,0 +1,179 @@
+.container {
+  max-width: 1200px;
+  margin: 120px auto 60px auto;
+  padding: 0 1.5rem;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+}
+
+.headerWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.mainTitle {
+  font-family: 'Sixtyfour Convergence', cursive, sans-serif;
+  font-size: 1.8rem;
+  color: #00f7ff;
+  text-shadow: 0 0 15px rgba(0, 247, 255, 0.5);
+  text-transform: uppercase;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.carouselButtons {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.navButton {
+  background: rgba(0, 247, 255, 0.1);
+  border: 1px solid #00f7ff;
+  color: #00f7ff;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+  box-shadow: 0 0 10px rgba(0, 247, 255, 0.2);
+}
+
+.navButton:hover {
+  background: #00f7ff;
+  color: #0c0c16;
+  box-shadow: 0 0 15px #00f7ff;
+}
+
+.carouselContainer {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding-bottom: 1.5rem;
+  scrollbar-width: thin;
+  scrollbar-color: #00f7ff rgba(12, 12, 22, 0.8);
+}
+
+.carouselContainer::-webkit-scrollbar {
+  height: 8px;
+}
+
+.carouselContainer::-webkit-scrollbar-track {
+  background: rgba(12, 12, 22, 0.8);
+  border-radius: 4px;
+}
+
+.carouselContainer::-webkit-scrollbar-thumb {
+  background: #00f7ff;
+  border-radius: 4px;
+  box-shadow: 0 0 8px #00f7ff;
+}
+
+.card {
+  min-width: 320px;
+  max-width: 350px;
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  box-sizing: border-box;
+  background: rgba(12, 12, 22, 0.8);
+  border: 1px solid rgba(0, 247, 255, 0.2);
+  border-radius: 14px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: #ff2fd1;
+  box-shadow: 0 6px 25px rgba(255, 47, 209, 0.2);
+}
+
+.gameHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  min-width: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 0.8rem;
+}
+
+.gameThumb {
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #00f7ff;
+}
+
+.gameInfo {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.gameTitle {
+  font-weight: bold;
+  font-size: 0.95rem;
+  color: #fff;
+  overflow-wrap: break-word;
+}
+
+.userName {
+  font-size: 0.8rem;
+  color: #a0a0c0;
+  overflow-wrap: break-word;
+}
+
+.reviewContent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-width: 0;
+}
+
+.ratingAndTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.stars {
+  color: #ffd700;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+}
+
+.reviewTitle {
+  font-size: 1rem;
+  color: #ff2fd1;
+  margin: 0;
+  font-weight: 600;
+  overflow-wrap: break-word;
+}
+
+.reviewText {
+  font-size: 0.9rem;
+  color: #d0d0e0;
+  line-height: 1.4;
+  font-style: italic;
+  margin: 0;
+  overflow-wrap: break-word;
+}
+

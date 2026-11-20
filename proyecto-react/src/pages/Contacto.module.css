@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Sixtyfour+Convergence&display=swap');
+
+.contactoSection {
+    position: relative;
+    width: 100%;
+    min-height: calc(100vh - 60px);
+    margin: 0;
+    box-sizing: border-box; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7rem 2rem 2rem 2rem;
+    overflow: hidden;
+    background-color: #0b0b0f;
+}
+
+.contactoSection::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://i.ibb.co/YTjXqmZ5/Contacto.jpg');
+    background-size: cover;
+    background-position: center 90%; /* <--- Imagen de fondo desplazada más abajo */
+    opacity: 0.52; /* <--- Menos opaca para que resalte un poco más */
+    filter: contrast(1.12);
+    z-index: 1;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 565px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0; /* <--- Sin márgenes para que no haya separación con el footer/newsletter */
+}
+
+.formularioWrapper {
+    width: 100%;
+    background: rgba(10, 10, 15, 0.88);
+    backdrop-filter: blur(12px);
+    border: 2px solid #00e5ff;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 0 35px rgba(0, 229, 255, 0.35), inset 0 0 20px rgba(123, 44, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.formularioWrapper h2 {
+    color: #00e5ff;
+    font-size: 2.2rem;
+    font-family: 'Sixtyfour Convergence', sans-serif;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 0 15px rgba(0, 229, 255, 0.5);
+}
+
+.formularioWrapper p {
+    color: #e0e0e0;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.05rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputGroup input,
+.inputGroup textarea {
+    width: 100%;
+    padding: 1rem 1.2rem;
+    border-radius: 10px;
+    border: 2px solid #7b2cff;
+    background: rgba(20, 20, 25, 0.9);
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.inputGroup input:focus,
+.inputGroup textarea:focus {
+    border-color: #00e5ff;
+    box-shadow: 0 0 15px rgba(0, 229, 255, 0.4);
+    background: rgba(26, 26, 35, 0.95);
+}
+
+.inputGroup textarea {
+    resize: vertical;
+    min-height: 130px;
+}
+
+.submitButton, .resetButton {
+    background: linear-gradient(135deg, #00e5ff, #00b8d4);
+    color: #000;
+    border: none;
+    padding: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(0, 229, 255, 0.4);
+    margin-top: 0.5rem;
+    width: 100%;
+}
+
+.submitButton:hover, .resetButton:hover {
+    background: linear-gradient(135deg, #33edff, #00d2f0);
+    box-shadow: 0 0 25px rgba(0, 229, 255, 0.7);
+    transform: translateY(-2px);
+}
+
+.successMessage {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.successMessage h3 {
+    font-family: 'Sixtyfour Convergence', sans-serif;
+    color: #00e5ff;
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+    text-shadow: 0 0 10px rgba(0, 229, 255, 0.4);
+}
+
+.successMessage p {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.imagenWrapper {
+    display: none; 
+}
+
+/* =========================================
+   MEDIA QUERIES (RESPONSIVO)
+   ========================================= */
+
+/* Tablets y pantallas medianas (hasta 768px) */
+@media (max-width: 768px) {
+    .contactoSection {
+        padding: 7rem 1.25rem 1.5rem 1.25rem;
+    }
+
+    .formularioWrapper {
+        padding: 30px 24px;
+        border-radius: 16px;
+    }
+
+    .formularioWrapper h2 {
+        font-size: 1.7rem;
+    }
+
+    .formularioWrapper p {
+        font-size: 0.98rem;
+        margin-bottom: 1.6rem;
+    }
+}
+
+/* Celulares (hasta 480px) */
+@media (max-width: 480px) {
+    .contactoSection {
+        padding: 6.5rem 0.85rem 1.25rem 0.85rem;
+    }
+
+    .formularioWrapper {
+        padding: 22px 16px;
+        border-width: 1.5px;
+        border-radius: 14px;
+    }
+
+    .formularioWrapper h2 {
+        font-size: 1.25rem;
+        line-height: 1.35;
+    }
+
+    .formularioWrapper p {
+        font-size: 0.9rem;
+        margin-bottom: 1.3rem;
+    }
+
+    .form {
+        gap: 1rem;
+    }
+
+    .inputGroup input,
+    .inputGroup textarea {
+        padding: 0.85rem 1rem;
+        font-size: 0.95rem;
+    }
+
+    .inputGroup textarea {
+        min-height: 110px;
+    }
+
+    .submitButton, .resetButton {
+        padding: 0.9rem;
+        font-size: 1rem;
+    }
+
+    .successMessage h3 {
+        font-size: 1.05rem;
+        line-height: 1.4;
+    }
+}

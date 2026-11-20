@@ -1,0 +1,98 @@
+[
+  {
+    "id": "merch-1",
+    "nombre": "Lámpara LED Neón Cyberpunk",
+    "precio": 8500,
+    "imagen": "../images/Lampara Led.jpg",
+    "descripcion": "Lámpara acrílica de alta precisión con grabado láser e iluminación LED RGB programable. Ideal para ambientar tu escritorio con un brillo neón retro-arcade, incluye base antideslizante, cable USB trenzado y control remoto para alternar modos de color e intensidad.",
+    "categoria": "Merchandising"
+  },
+  {
+    "id": "merch-2",
+    "nombre": "Keycap Artesanal de Resina",
+    "precio": 4500,
+    "imagen": "../images/Keycap Artesanal.jpg",
+    "descripcion": "Tecla artesanal esculpida y pintada a mano en resina epóxica translúcida con detalle interno de cartucho clásico de 16 bits. Compatible con switches mecánicos tipo Cherry MX y clones, diseñada para dejar pasar la retroiluminación RGB de tu teclado.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": "merch-3",
+    "nombre": "Mousepad XXL Retro-Futurista",
+    "precio": 6200,
+    "imagen": "../images/Mousepad.jpg",
+    "descripcion": "Alfombrilla de escritorio extendida (90x40 cm) con ilustración exclusiva cyberpunk en alta definición. Cuenta con superficie microtexturizada de baja fricción para máxima precisión competitiva, bordes reforzados con costura neón y base de caucho natural antideslizante.",
+    "categoria": "Accesorios"
+  },
+  {
+    "id": "merch-4",
+    "nombre": "Soporte para Auriculares Cyber",
+    "precio": 9900,
+    "imagen": "../images/Soporte para Auriculares.jpg",
+    "descripcion": "Base estructurada de estética industrial futurista fabricada en polímero de alta densidad con acabado mate. Mantiene tus headsets protegidos, organizados y listos para la acción, evitando deformaciones en la vincha y optimizando el espacio de tu setup.",
+    "categoria": "Accesorios"
+  },
+  {
+    "id": "merch-5",
+    "nombre": "Taza Térmica Cartucho Clásico",
+    "precio": 5100,
+    "imagen": "../images/Taza Termica.jpg",
+    "descripcion": "Taza térmica de doble pared en acero inoxidable revestida con una funda de silicona texturizada que replica un cartucho retro de consola. Conserva tus bebidas calientes o frías durante horas y cuenta con tapa hermética antiderrame para jugar sin riesgos.",
+    "categoria": "Merchandising"
+  },
+  {
+    "id": "merch-6",
+    "nombre": "Póster Metálico Estilo Displate",
+    "precio": 12000,
+    "imagen": "../images/Poster Metalico.jpg",
+    "descripcion": "Lámina de acero inoxidable de 45x32 cm con impresión UV de alto contraste y acabado satinado resistente a rayones. Presenta arte conceptual cyberpunk original e incluye sistema de montaje magnético para colocarlo en la pared sin necesidad de perforaciones.",
+    "categoria": "Decoración"
+  },
+  {
+    "id": "merch-7",
+    "nombre": "Pack de Stickers Holográficos",
+    "precio": 2500,
+    "imagen": "../images/Pack de Stickers.jpg",
+    "descripcion": "Set coleccionable de 12 calcomanías de vinilo premium con laminado holográfico iridiscente. Resistentes al agua, rayos UV y rayaduras; ideales para personalizar notebooks, gabinetes, consolas portátiles y termos con iconografía gamer de culto.",
+    "categoria": "Merchandising"
+  },
+  {
+    "id": "merch-8",
+    "nombre": "Cable Mod Sleeved Neon",
+    "precio": 7800,
+    "imagen": "../images/Cable Mod.jpg",
+    "descripcion": "Kit de extensiones de cables para fuente de poder revestidos en malla paracord de alta densidad en tonos cian y magenta neón. Incluye peines organizadores acrílicos para lograr una gestión de cables impecable y elevar la estética interna de tu gabinete.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": "merch-9",
+    "nombre": "Pin Metálico Coleccionable",
+    "precio": 2200,
+    "imagen": "../images/Pin Metalico.jpg",
+    "descripcion": "Pin esmaltado en relieve con terminación metálica oscura y colores vibrantes inspirados en el pixel art arcade de los años 90. Cuenta con doble broche trasero de seguridad para fijarlo con firmeza en mochilas, camperas o gorras.",
+    "categoria": "Merchandising"
+  },
+  {
+    "id": "merch-10",
+    "nombre": "Café de Especialidad Modo Hardcore",
+    "precio": 6900,
+    "imagen": "../images/Cafe de Especialidad.jpg",
+    "descripcion": "Blend de café de especialidad 100% arábica de tueste intenso con notas a cacao amargo y avellana tostada (250 g). Envasado en bolsa hermética con válvula desgasificadora para mantener su frescura y potenciar tu concentración en maratones nocturnas.",
+    "categoria": "Consumibles"
+  },
+  {
+    "id": "merch-11",
+    "nombre": "Gorra Arcadia Retro",
+    "precio": 3900,
+    "imagen": "../images/Gorra Arcadia.jpg",
+    "descripcion": "Gorra clásica de 6 paneles confeccionada en gabardina de algodón negro lavado con visera curva. Luce un parche frontal bordado en alta densidad con el emblema pixelado oficial de Arcadia y correa trasera metálica regulable.",
+    "categoria": "Indumentaria"
+  },
+  {
+    "id": "merch-12",
+    "nombre": "Set de Posavasos Circuit",
+    "precio": 4800,
+    "imagen": "../images/Set de Portavasos.jpg",
+    "descripcion": "Juego de 4 posavasos fabricados en silicona flexible de grado alimenticio con relieve inspirado en pistas de placas madre y circuitos impresos. Antideslizantes, resistentes al calor y fáciles de limpiar para proteger tu escritorio.",
+    "categoria": "Hogar"
+  }
+]

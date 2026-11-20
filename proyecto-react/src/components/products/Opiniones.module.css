@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Sixtyfour+Convergence&display=swap');
+
+.opinionesContainer {
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 2rem;
+  box-sizing: border-box;
+  background: rgba(12, 12, 22, 0.85);
+  border: 1px solid rgba(0, 247, 255, 0.25);
+  border-radius: 16px;
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.7), inset 0 0 15px rgba(0, 247, 255, 0.03);
+  backdrop-filter: blur(10px);
+}
+
+.opinionesContainer h2 {
+  font-family: 'Sixtyfour Convergence', cursive, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  color: #00f7ff;
+  text-shadow: 0 0 12px rgba(0, 247, 255, 0.5);
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
+/* --- ESTADOS DE CARGA Y ERROR --- */
+.cargando,
+.error,
+.emptyOpinions {
+  text-align: center;
+  font-size: 1.05rem;
+  padding: 2rem 1.5rem;
+  box-sizing: border-box;
+  color: #a0a0c0;
+  font-style: italic;
+  background: rgba(18, 18, 30, 0.6);
+  border: 1px dashed rgba(0, 247, 255, 0.2);
+  border-radius: 12px;
+  margin: 1.5rem 0;
+  overflow-wrap: break-word;
+}
+
+.error {
+  color: #ff4d4d;
+  border-color: rgba(255, 77, 77, 0.4);
+}
+
+/* --- FORMULARIO --- */
+.formContainer {
+  background: rgba(18, 18, 32, 0.9);
+  border: 1px solid rgba(255, 47, 209, 0.3);
+  border-radius: 14px;
+  padding: 2rem;
+  margin-bottom: 2.5rem;
+  box-sizing: border-box;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.formTitle {
+  font-family: 'Sixtyfour Convergence', cursive, sans-serif;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #ff2fd1;
+  text-shadow: 0 0 8px rgba(255, 47, 209, 0.4);
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  overflow-wrap: anywhere;
+}
+
+.successMessage {
+  background: rgba(0, 247, 255, 0.1);
+  border: 1px solid #00f7ff;
+  color: #00f7ff;
+  padding: 0.9rem 1rem;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px rgba(0, 247, 255, 0.2);
+  overflow-wrap: break-word;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-width: 0;
+}
+
+.inputGroup label {
+  font-size: 0.9rem;
+  color: #ccc;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  overflow-wrap: break-word;
+}
+
+.input,
+.select,
+.textarea {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  background: rgba(10, 10, 18, 0.9);
+  border: 1px solid rgba(0, 247, 255, 0.3);
+  border-radius: 8px;
+  padding: 0.8rem 1rem;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.95rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.input:focus,
+.select:focus,
+.textarea:focus {
+  border-color: #ff2fd1;
+  box-shadow: 0 0 10px rgba(255, 47, 209, 0.3);
+}
+
+.select {
+  cursor: pointer;
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+.submitButton {
+  background: linear-gradient(135deg, #ff2fd1 0%, #00f7ff 100%);
+  color: #0a0a12;
+  font-family: 'Sixtyfour Convergence', cursive;
+  font-size: 0.75rem;
+  font-weight: 900;
+  padding: 0.9rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  overflow-wrap: anywhere;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 12px rgba(255, 47, 209, 0.4);
+  margin-top: 0.5rem;
+  align-self: flex-start;
+}
+
+.submitButton:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 0 18px rgba(0, 247, 255, 0.8);
+}
+
+.submitButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* --- LISTADO DE OPINIONES --- */
+.listaOpiniones {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.opinionCard {
+  background: rgba(15, 15, 26, 0.75);
+  border: 1px solid rgba(0, 247, 255, 0.15);
+  border-radius: 12px;
+  padding: 1.2rem 1.5rem;
+  box-sizing: border-box;
+  min-width: 0;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.opinionCard:hover {
+  transform: translateX(4px);
+  border-color: rgba(255, 47, 209, 0.4);
+}
+
+.headerOpinion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.6rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding-bottom: 0.5rem;
+}
+
+.headerOpinion strong {
+  color: #00f7ff;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  overflow-wrap: break-word;
+}
+
+.headerOpinion span {
+  color: #ffd700;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.opinionCard p {
+  color: #d5d5e5;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0;
+  overflow-wrap: break-word;
+}
+
+@media (max-width: 768px) {
+  .opinionesContainer {
+    margin: 2rem 1rem;
+    padding: 1.5rem 1.25rem;
+    border-radius: 14px;
+  }
+
+  .opinionesContainer h2 {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .formContainer {
+    padding: 1.4rem 1.15rem;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+  }
+
+  .formTitle {
+    font-size: 0.85rem;
+    margin-bottom: 1.15rem;
+  }
+
+  .input,
+  .select,
+  .textarea {
+    padding: 0.7rem 0.85rem;
+    font-size: 0.9rem;
+  }
+
+  .submitButton {
+    font-size: 0.68rem;
+    padding: 0.8rem 1.2rem;
+  }
+
+  .opinionCard {
+    padding: 1rem 1.15rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .opinionesContainer {
+    margin: 1.5rem 0.75rem;
+    padding: 1.15rem 0.9rem;
+    border-radius: 12px;
+  }
+
+  .opinionesContainer h2 {
+    font-size: 0.92rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .cargando,
+  .error,
+  .emptyOpinions {
+    font-size: 0.95rem;
+    padding: 1.5rem 1rem;
+  }
+
+  .formContainer {
+    padding: 1.1rem 0.9rem;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+  }
+
+  .formTitle {
+    font-size: 0.75rem;
+  }
+
+  .form {
+    gap: 1rem;
+  }
+
+  .inputGroup label {
+    font-size: 0.82rem;
+  }
+
+  .input,
+  .select,
+  .textarea {
+    padding: 0.65rem 0.75rem;
+    font-size: 0.88rem;
+  }
+
+  .submitButton {
+    width: 100%;
+    align-self: stretch;
+    font-size: 0.62rem;
+    padding: 0.8rem 1rem;
+    text-align: center;
+  }
+
+  .opinionCard {
+    padding: 0.9rem 1rem;
+    border-radius: 10px;
+  }
+
+  .opinionCard:hover {
+    transform: none;
+  }
+
+  .headerOpinion strong {
+    font-size: 0.88rem;
+  }
+
+  .headerOpinion span {
+    font-size: 0.82rem;
+  }
+
+  .opinionCard p {
+    font-size: 0.88rem;
+  }
+}

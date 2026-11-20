@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Sixtyfour+Convergence&display=swap');
+
+.contenedorPaginacion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 2rem 0 1rem;
+  padding: 0.5rem 0;
+}
+
+.botonPagina {
+  min-width: 42px;
+  height: 42px;
+  padding: 0 0.75rem;
+  border-radius: 10px;
+  border: 1.5px solid rgba(0, 247, 255, 0.35);
+  background: rgba(12, 12, 18, 0.88);
+  color: #e6e6f0;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  transition:
+    transform 0.2s ease,
+    border-color 0.25s ease,
+    background-color 0.25s ease,
+    box-shadow 0.25s ease,
+    color 0.25s ease;
+}
+
+.botonPagina:hover:not(:disabled) {
+  border-color: #00f7ff;
+  color: #00f7ff;
+  transform: translateY(-2px);
+  box-shadow: 0 0 14px rgba(0, 247, 255, 0.35);
+}
+
+.botonPagina:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.paginaActiva,
+.paginaActiva:hover:not(:disabled) {
+  background: linear-gradient(135deg, #00f7ff, #00b8d4);
+  border-color: #00f7ff;
+  color: #07070a;
+  font-weight: 900;
+  box-shadow: 0 0 18px rgba(0, 247, 255, 0.55);
+}
+
+.botonFlecha {
+  border-color: rgba(255, 47, 209, 0.55);
+  color: #ff2fd1;
+  font-weight: 900;
+}
+
+.botonFlecha:hover:not(:disabled) {
+  border-color: #ff2fd1;
+  color: #ffffff;
+  background: rgba(255, 47, 209, 0.16);
+  box-shadow: 0 0 14px rgba(255, 47, 209, 0.45);
+}
+
+.botonPagina:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+@media (max-width: 480px) {
+  .contenedorPaginacion {
+    gap: 0.4rem;
+    margin: 1.5rem 0 0.75rem;
+  }
+
+  .botonPagina {
+    min-width: 36px;
+    height: 36px;
+    padding: 0 0.55rem;
+    font-size: 0.92rem;
+    border-radius: 8px;
+  }
+}

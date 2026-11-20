@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Sixtyfour+Convergence&display=swap');
+
+.authSection {
+  width: 100%;
+  min-height: calc(100vh - 80px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+  background-color: #0b0b0f;
+  box-sizing: border-box;
+}
+
+.authContainer {
+  width: 100%;
+  max-width: 520px;
+  background: rgba(12, 12, 22, 0.95);
+  backdrop-filter: blur(14px);
+  border: 2px solid #00f7ff;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 0 35px rgba(0, 247, 255, 0.25), inset 0 0 20px rgba(255, 47, 209, 0.1);
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.authPanelWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+
+.panelContainer {
+  width: 100%;
+  max-width: 600px;
+  background: rgba(15, 15, 26, 0.95);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 247, 255, 0.4);
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.6), inset 0 0 15px rgba(0, 247, 255, 0.05);
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.title {
+  font-family: 'Sixtyfour Convergence', sans-serif;
+  font-size: 1.6rem;
+  color: #00f7ff;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 12px rgba(0, 247, 255, 0.5);
+  text-transform: uppercase;
+}
+
+.subtitle {
+  color: #c0c0d0;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.95rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.inputGroup label {
+  color: #e0e0e0;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.input {
+  width: 100%;
+  padding: 0.9rem 1.1rem;
+  border-radius: 10px;
+  border: 2px solid #ff2fd1;
+  background: rgba(20, 20, 25, 0.9);
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.input:focus {
+  border-color: #00f7ff;
+  box-shadow: 0 0 15px rgba(0, 247, 255, 0.4);
+  background: rgba(26, 26, 35, 0.95);
+}
+
+select.input {
+  cursor: pointer;
+}
+
+.submitButton {
+  background: linear-gradient(135deg, #ff2fd1 0%, #00f7ff 100%);
+  color: #0a0a12;
+  border: none;
+  padding: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'Sixtyfour Convergence', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(255, 47, 209, 0.4);
+  margin-top: 0.5rem;
+  width: 100%;
+}
+
+.submitButton:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 0 25px rgba(0, 247, 255, 0.8);
+}
+
+.submitButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.errorMessage {
+  background: rgba(255, 77, 77, 0.1);
+  border: 1px solid #ff4d4d;
+  color: #ff4d4d;
+  padding: 0.8rem;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 0.9rem;
+  box-shadow: 0 0 10px rgba(255, 77, 77, 0.2);
+}
+
+.successMessage {
+  background: rgba(0, 247, 255, 0.1);
+  border: 1px solid #00f7ff;
+  color: #00f7ff;
+  padding: 0.8rem;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 10px rgba(0, 247, 255, 0.2);
+  font-weight: bold;
+}
+
+.loginRedirect {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: #a0a0c0;
+  font-size: 0.9rem;
+}
+
+.loginRedirect a {
+  color: #00f7ff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: text-shadow 0.2s ease;
+}
+
+.loginRedirect a:hover {
+  text-shadow: 0 0 8px rgba(0, 247, 255, 0.8);
+}
+
+/* =========================================
+   MEDIA QUERIES (RESPONSIVO)
+   ========================================= */
+
+/* Tablets y pantallas medianas (hasta 768px) */
+@media (max-width: 768px) {
+  .authSection {
+    padding: 5.5rem 1.25rem 3rem 1.25rem;
+  }
+
+  .authContainer {
+    padding: 30px 24px;
+    border-radius: 16px;
+  }
+
+  .panelContainer {
+    padding: 24px 20px;
+    border-radius: 14px;
+  }
+
+  .title {
+    font-size: 1.35rem;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+    margin-bottom: 1.6rem;
+  }
+}
+
+/* Celulares (hasta 480px) */
+@media (max-width: 480px) {
+  .authSection {
+    padding: 5rem 0.75rem 2.5rem 0.75rem;
+  }
+
+  .authContainer {
+    padding: 22px 16px;
+    border-width: 1.5px;
+    border-radius: 14px;
+  }
+
+  .authPanelWrapper {
+    padding: 1rem 0;
+  }
+
+  .panelContainer {
+    padding: 18px 14px;
+    border-radius: 12px;
+  }
+
+  .title {
+    font-size: 1.1rem;
+    line-height: 1.4;
+  }
+
+  .subtitle {
+    font-size: 0.85rem;
+    margin-bottom: 1.3rem;
+  }
+
+  .form {
+    gap: 1rem;
+  }
+
+  .input {
+    padding: 0.8rem 0.95rem;
+    font-size: 0.92rem;
+  }
+
+  .submitButton {
+    padding: 0.85rem;
+    font-size: 0.7rem;
+  }
+
+  .loginRedirect {
+    font-size: 0.85rem;
+    margin-top: 1.2rem;
+  }
+}

@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Sixtyfour+Convergence&display=swap');
+
+.loginContainer {
+  max-width: 420px;
+  margin: 140px auto 80px auto;
+  padding: 2.5rem;
+  background: rgba(12, 12, 22, 0.85);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 247, 255, 0.35);
+  border-radius: 20px;
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.85), inset 0 0 20px rgba(0, 247, 255, 0.05);
+  box-sizing: border-box;
+}
+
+.title {
+  font-family: 'Sixtyfour Convergence', sans-serif;
+  font-size: 1.4rem;
+  color: #00f7ff;
+  text-align: center;
+  margin-bottom: 2rem;
+  text-shadow: 0 0 15px rgba(0, 247, 255, 0.6);
+  text-transform: uppercase;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.label {
+  font-size: 0.85rem;
+  color: #ff2fd1;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-shadow: 0 0 5px rgba(255, 47, 209, 0.4);
+}
+
+.input {
+  background: rgba(10, 10, 18, 0.95);
+  border: 1px solid rgba(0, 247, 255, 0.3);
+  border-radius: 8px;
+  padding: 0.85rem;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.95rem;
+  outline: none;
+  transition: all 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.input:focus {
+  border-color: #00f7ff;
+  box-shadow: 0 0 12px rgba(0, 247, 255, 0.4);
+}
+
+.errorMessage {
+  background: rgba(255, 77, 77, 0.15);
+  border: 1px solid #ff4d4d;
+  color: #ff4d4d;
+  padding: 0.75rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 6px rgba(255, 77, 77, 0.4);
+}
+
+.submitButton {
+  margin-top: 0.8rem;
+  background: linear-gradient(135deg, #ff2fd1 0%, #00f7ff 100%);
+  color: #0a0a12;
+  font-family: 'Sixtyfour Convergence', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 900;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 12px rgba(255, 47, 209, 0.4);
+}
+
+.submitButton:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 0 18px rgba(0, 247, 255, 0.7);
+}
+
+.submitButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* =========================================
+   MEDIA QUERIES (RESPONSIVO)
+   ========================================= */
+
+/* Tablets y pantallas medianas (hasta 768px) */
+@media (max-width: 768px) {
+  .loginContainer {
+    margin: 115px auto 60px auto;
+    padding: 2rem;
+    border-radius: 18px;
+  }
+
+  .title {
+    font-size: 1.25rem;
+    margin-bottom: 1.75rem;
+  }
+}
+
+/* Celulares (hasta 480px) */
+@media (max-width: 480px) {
+  .loginContainer {
+    max-width: calc(100% - 1.5rem);
+    margin: 95px 0.75rem 40px 0.75rem;
+    padding: 1.5rem 1.25rem;
+    border-radius: 14px;
+  }
+
+  .title {
+    font-size: 1.05rem;
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+  }
+
+  .form {
+    gap: 1rem;
+  }
+
+  .input {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .submitButton {
+    width: 100%;
+    padding: 0.85rem;
+    font-size: 0.75rem;
+  }
+}
